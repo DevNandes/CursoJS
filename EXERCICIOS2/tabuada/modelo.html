@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section id="section">
+        <div id="txt1">
+            Número: <input type="number" name="num" id="txtn">
+            <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+        </div>
+        <div id="txt2">
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digite um número acima!</option>
+            </select>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Faellnandes</p>
+    </footer>   
+    <div id="txt3">
+        <div id="modes">Modes:</div>
+        Normal: <input type="radio" name="dark" id="normal" checked onclick="envi()">
+        Dark: <input type="radio" name="dark" id="dark" onclick="enviar()">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

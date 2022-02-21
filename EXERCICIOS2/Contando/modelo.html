@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperCounter</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos Contar!</h1>
+    </header>
+    <section>
+        <div id="txt1">
+            Início: <input type="number" name="ini" id="ini">
+        </div>
+        <div id="txt2">
+            Fim: <input type="number" name="fim" id="fim">
+        </div>
+        <div id="mark1">
+            Adição: <input type="radio" name="mark" id="txta" checked>
+            Multiplos: <input type="radio" name="mark" id="txtm">
+        </div>
+        <div id="txt3">
+            Passo: <input type="number" name="pass" id="pass">
+        </div>
+        <div id="txt4">
+            <input type="button" value="Contar" onclick="contar()">
+        </div>
+        <div id="txt5">
+            Aguardando dados...
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Faellnandes</p>
+    </footer>   
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DETRAN</title>
+    <link rel="stylesheet" href="javazin.css">
+</head>
+<body>
+    <header>
+        <p id='titulo'>DETRAN</p>
+    </header>
+    <section>
+        <div id='txt1'>
+            Digite aqui abaixo as suas informações:
+        </div>
+
+        <div id='txt2'>
+            Seu nome:<input type="text" name="nome" id="nome">
+        </div>
+        <div id='txt3'>
+            <p>Você tem carteira de motorista:</p>
+            Sim:<input type="radio" name="mot" id="mots" checked>
+            Não:<input type="radio" name="mot" id="motn">
+        </div>
+        <div id='txt4'>
+            <p>Digite aqui nesse campo sua velocidade:</p>
+            <input type="number" name="vel1" id="vel1">
+        </div>
+        <div id='txt5'>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+        <div id='txt6'>
+            Aguardando dados...
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Faellnandes</p>
+    </footer>
+    <script src="javazin.js"></script>
+</body>
+</html>

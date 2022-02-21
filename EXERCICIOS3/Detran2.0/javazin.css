@@ -1,0 +1,58 @@
+body{
+    background: rgb(75, 67, 67);
+    font: normal 18px Arial;
+}
+
+header{
+    background: green;
+    width: 300px;
+    font-weight: 5px;
+    margin: auto;
+    font: bold 30px Arial;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+}
+
+section{
+    text-align: center;
+    background-color: white;
+    font: normal 18px Arial;
+    border-radius: 15px;
+    color: black;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    background: green;
+    width: 200px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+}
+div#txt1{
+    padding: 25px;
+}
+div#txt3{
+    padding: 10px;
+}
+div#txt5{
+    padding: 15px;
+}
+div#txt6{
+    background-color: red;
+    font: bold 18px Arial;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+}
+p#titulo{
+    padding: -70px;
+}
