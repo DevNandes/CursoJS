@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        h1{
+            font: bold 40pt Arial;
+            color: black;
+            background-color: blueviolet;
+        }
+        body{
+            background-color: aqua;
+            color: black;
+            font: normal 25pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual sua nacionalidade?</h1>
+    <p>Descuba aqui no nosso site</p>
+    <p>Digite na caixa abaixo o seu país</p>
+        <input type="text" name="txt1" id="txt1">
+        <input type="button" value="Enviar" onclick="enviar()">
+        <div id="res">Sua nacionalidade é : aguardando dados...</div>
+    <script>
+        function enviar() {
+            var txt1 = document.getElementById('txt1').value
+            var res = document.getElementById('res')
+            if(txt1 === 'Brasil'){
+                res.innerHTML = `Sua nacionalidade é: Brasileiro. Pois voce nasceu no ${txt1}`
+            } else {
+                res.innerHTML = `Sua nacionalidade é: Gringo. Pois você nasceu em ${txt1}`
+            }
+        }
+    </script>
+</body>
+</html>

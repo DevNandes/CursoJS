@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        h1{
+            color: rgb(0, 0, 0);
+            font: bold 25pt Arial;
+            background: green;
+        }
+        body{
+            background-color: rgb(102, 102, 102);
+            color: rgb(0, 253, 42);
+            font: normal 18pt Arial;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>A velocidade máxima é de 60Km/h</p>
+    <p>Digite sua velocidade:</p>
+        <input type="number" name="txtvel" id="txtvel">
+        <input type="button" value="Enviar" onclick="enviar()">
+        <div id="resultado">Resultado do teste: Aguardando...</div>
+    <script>
+        function enviar() {
+            var txtv = window.document.getElementById('txtvel')
+            var res = window.document.getElementById('resultado')
+            var vel = Number(txtv.value)
+                res.innerHTML = (`<p>Sua velocidade foi de <strong>${vel}Km/h</strong></p>`)
+            if(vel > 60){
+                res.innerHTML += `<p>Então você foi MULTADO!</p>`
+            } else {
+                res.innerHTML += `<p>Então você está dentro do limie permitido, siga a sua viagem</p>`
+            }
+            res.innerHTML += ('<p>Dirija sempre com cinto de segurança!</p>')
+            
+        }
+
+    </script>
+</body>
+</html>
